@@ -4,7 +4,7 @@
   "description": "magically resizes a textarea to match user input",
   "main": "magical-textarea.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "./node_modules/coffee-script/bin/coffee -c magical-textarea.coffee"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
   "author": "Jon Packer",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "96cf383339f87843fd59edd3ea5c89f4086f5583"
+  "gitHead": "96cf383339f87843fd59edd3ea5c89f4086f5583",
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
+  }
 }
