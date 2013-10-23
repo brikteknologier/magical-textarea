@@ -19,6 +19,6 @@ module.exports = (textarea) ->
   # this is the easier solution.
   do checkDomAdded = ->
     if $("##{id}").length
-      setTimeout(checkHeight())
+      setTimeout(checkHeight, 20)
     else
       setTimeout(checkDomAdded, 20)
